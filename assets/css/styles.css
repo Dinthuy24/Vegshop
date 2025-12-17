@@ -291,3 +291,58 @@ input {
   font-size: var(--tiny-font-size);
   font-weight: var(--weight-700); /* Thêm font-weight cho dễ đọc */
 }
+
+.active-link,
+.nav__link:hover {
+  color: var(--first-color);
+}
+/*=============== HOME ===============*/
+.home__container {
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+  /* Thêm background image cho section home */
+  background-image: url('../img/home-bg.jpg'); /* Giả định có ảnh nền */
+  background-size: cover;
+  background-position: center;
+  min-height: 500px; /* Chiều cao tối thiểu cho dễ nhìn */
+  border-radius: 1.5rem;
+  padding: 3rem;
+}
+
+.home__content {
+  max-width: 450px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Nền mờ cho nội dung */
+  border-radius: 1rem;
+}
+
+.home__subtitle,
+.home__description {
+  font-size: var(--large-font-size);
+}
+
+.home__subtitle {
+  font-family: var(--second-font);
+  font-weight: var(--weight-600);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-700);
+  line-height: 1.4;
+}
+
+.home__title span {
+  color: var(--first-color);
+  font-size: var(--big-font-size);
+}
+
+.home__description {
+  margin-block: .5rem 2rem;
+}
+
+.home__img {
+  justify-self: flex-end;
+}
